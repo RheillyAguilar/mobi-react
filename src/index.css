@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #221f1f;
+}
+
+
+.overlay-slick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        theme('colors.body'),
+        transparent 90%,
+        theme('colors.body')
+    );
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 280px) {
+    .detailsMobile {
+        display: grid;
+        place-items: center;
+        margin-top: -200px;
+    }
+
+    .titleName {
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .genreType {
+        display: flex;
+        margin: auto;
+    }
+
+    .descriptionMovie {
+        text-align: center;
+    }
+
+    .videoTrailer {
+        display: grid;
+        place-items: center;
+    }
+}
